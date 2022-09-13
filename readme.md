@@ -27,5 +27,5 @@
 ---
 <br>
 
-[![Project Demo](https://img.shields.io/badge/Project%20Demo-Click%20Here%20for%20%20Live%20Link-yellowgreen?style=flat-square&logo=Product%20Hunt)]()
+[![Project Demo](https://img.shields.io/badge/Project%20Demo-Click%20Here%20for%20%20Live%20Link-yellowgreen?style=flat-square&logo=Product%20Hunt)](https://sugnana-murthy-r-portfolio.netlify.app/)
 ##### Time Taken: 19 hours (approx)
