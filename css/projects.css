@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 99vw;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffffff00;
+    font-family: "Poppins", sans serif;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+
+.card-container {
+  display: block;
+  margin-top: 10px;
+  margin-left: 12px;
+  border: 3px solid #758283;
+  border-radius: 10px;
+  height: 88vh;
+}
+
+#tailCSSTab{
+  display: none;
+}
+
+#JSTab{
+  display: none;
+}
+
+#reactTab{
+  display: none;
+}
+
+#angularTab{
+  display: none;
+}
+
+#vueTab{
+  display: none;
+}
+
+.btn-group {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.btn-group, h1{
+  color: #758283;
+}
+
+.btn-group button {
+  margin-right: 5px;
+  background-color: #38CC77; 
+  border: 2px solid #6AC47E; 
+  border-radius: 10px;
+  width: 130px;
+  color: white; 
+  padding: 10px 24px; 
+  cursor: pointer; 
+  float: left;   
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3DBE29;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    width: 98vw;
+    height: 96vh;
+    /* border: 1px solid black; */
+}
+
+.column {
+  position: relative;
+  float: left;
+  width: 19%;
+  height: 190px;
+  padding: 20px;
+  border: 1px solid #758283;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 1; 
+  cursor: pointer; 
+  width: 100%;
+  height: 90%;
+  border: 1px solid #758283;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bottom-left {
+  position: absolute;
+  cursor: pointer; 
+  bottom: 5px;
+  left: 20px;
+  /* width: 85%; */
+  height: 25px;
+  /* background-color: black; */
+  /* color: black; */
+}
+
+.bottom-right {
+  position: absolute;
+  cursor: pointer; 
+  bottom: 5px;
+  right: 20px;
+  /* width: 85%; */
+  height: 25px;
+  /* background-color: black; */
+  /* color: black; */
+}
+
+.prj_links {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  font-size: 14px;
+}
+
+.prj_links:link {
+  color: blue;
+}
+
+.prj_links:visited {
+  color: purple;
+}
+
+.prj_links:focus, a:hover {
+  border-bottom: 1px solid;
+}
+
+.prj_links:active {
+  color: red;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 85%;
+  padding: 20px;
+  border: 1px solid #758283;
+  border-radius: 10px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.column:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  top: 1em;
+  left: 5;
+  color: white;
+  font-size: 0.75em;
+  position: absolute;
+  text-align: left;
+}
+
+.text li {
+  margin-left: 15px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #51E1ED; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1B98F5; 
+}
+
+/* Screen Size/Width 500px and down */
+@media only screen and (max-width: 500px) {
+  .column {    
+    width: 30%;
+    height: 180px;
+    padding: 20px;
+  }
+
+  .card-container {    
+    height: 165vh;
+  }
+
+  .prj_links {
+    font-size: 10px;
+  }
+
+  .text {
+    top: 1em;
+    left: 5;
+    color: white;
+    font-size: 0.5em;
+    position: absolute;
+    text-align: left;
+  }
+
+  .text li {
+    margin-left: 1px;
+  }
+
+  .btn-group button {    
+    width: 75px;    
+    padding: 5px 5px;  
+    font-size: 10px;      
+  }
+
+}
+
+/* Screen Size/Width between 500px to 993px */
+@media only screen and (min-width: 501px) and (max-width: 993px) {
+  .column {    
+    width: 23%;
+    height: 180px;
+    padding: 20px;
+  }
+
+  .card-container {    
+    height: 111vh;
+  }
+
+  .prj_links {
+    font-size: 12px;
+  }
+
+  .text {
+    top: 1em;
+    left: 5;
+    color: white;
+    font-size: 0.7em;
+    position: absolute;
+    text-align: left;
+  }
+
+  .text li {
+    margin-left: 15px;
+  }
+
+  .btn-group button {    
+    width: 110px;    
+    padding: 5px 5px;  
+    font-size: 10px;      
+  }
+
+}

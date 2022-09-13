@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/award.css" />
+    <title>Awards</title>
+</head>
+<body>
+
+    <div class="middle">
+        <h1>Awards</h1>
+    </div>
+
+    <div class="row">  
+        <div>      
+            <img class="brand-logo" src="./assets/awards/Accenture-logo.png" alt="Accenture Logo">
+        </div>
+        <div class="column">
+          <img src="./assets/awards/award-accenture1.png" id="myImg" onclick="openModal('myImg',this.src,this.alt)" alt="Award1" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="./assets/awards/award-accenture2.png" id="myImg" onclick="openModal('myImg',this.src,this.alt)" alt="Award2" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="./assets/awards/award-accenture3.png" id="myImg" onclick="openModal('myImg',this.src,this.alt)" alt="Award3" style="width:100%">
+        </div>
+    </div>
+
+    <br>   
+
+    <div class="row"> 
+        <div>      
+            <img class="brand-logo" src="./assets/awards/exl-logo.png" alt="EXL Logo">
+        </div>
+
+        <div class="column">
+          <img src="./assets/awards/award-exl1.png" id="myImg" onclick="openModal('myImg',this.src,this.alt)" alt="Award1" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="./assets/awards/award-exl2.png" id="myImg" onclick="openModal('myImg',this.src,this.alt)" alt="Award2" style="width:100%">
+        </div>         
+    </div> 
+    
+    <br>   
+
+    <div class="row"> 
+        <div>      
+            <img class="brand-logo" src="./assets/awards/Applied-Materials-logo.png" alt="AMAT Logo">
+        </div>
+
+        <div class="column">
+          <img src="./assets/awards/award-amat1.png" id="myImg" onclick="openModal('myImg',this.src,this.alt)" alt="Award1" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="./assets/awards/award-amat2.png" id="myImg" onclick="openModal('myImg',this.src,this.alt)" alt="Award2" style="width:100%">
+        </div>         
+        
+        <div class="column">
+            <img src="./assets/awards/award-amat3.png" id="myImg" onclick="openModal('myImg',this.src,this.alt)" alt="Award3" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="./assets/awards/award-amat4.png" id="myImg" onclick="openModal('myImg',this.src,this.alt)" alt="Award4" style="width:100%">
+        </div> 
+
+        <div class="column">
+            <img src="./assets/awards/award-amat5.png" id="myImg" onclick="openModal('myImg',this.src,this.alt)" alt="Award5" style="width:100%">
+        </div>
+
+    </div> 
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div> 
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        function openModal(img_id, img_src, img_alt) {
+            // Get the image and insert it inside the modal - use its "alt" text as a caption        
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            var img = document.getElementById(img_id);
+            modal.style.display = "block";
+            modalImg.src = img_src;
+            captionText.innerHTML = img_alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

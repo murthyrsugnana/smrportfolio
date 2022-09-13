@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 99vh;
+    width: 100%;
+    background-color: #FFFFFF; /*#CAD5E2;*/
+    font-family: "Poppins", sans serif;
+    font-style: normal;
+    font-display: swap;
+    /* overflow: hidden; */
+}
+
+.container {
+    width: 98vw;
+    height: 98vh;
+    font-size: 14px;
+    /* border: 1px solid transparent;
+    border-radius: 10px;    
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);      */
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    border: 1px solid transparent;
+    border-radius: 10px;    
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
+    /* margin-left: 10px; */
+    width: 25%;
+    height: 99vh;
+    padding: 10px;
+}
+
+.column1{
+    border: 1px solid transparent;
+    border-radius: 10px;    
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
+    /* margin-left: 10px; */
+    width: 75%;
+    height: 99vh;
+    padding: 10px;
+}
+
+.pd{    
+    text-align: left;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 100%;
+    height: 23%;
+    color:  rgb(117,117,117);
+    background-color:#FFFFFF;
+    border: 1px solid transparent;
+    border-radius: 10px;    
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;  
+    margin-top: 10px;
+}
+
+.pd:hover{
+    box-shadow: 4px 8px 16px 2px rgba(0,0,0,0.2);
+}
+
+.pd p{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.personal_details, td {
+    font-size: 1em;
+    font-weight: 700;
+    text-align: left;
+    justify-content: center;
+    width: 100%;
+    /* height: 30px; */
+    padding: 4px;
+    overflow: hidden;
+    /* border: 1px solid rgb(235, 233, 233); */
+}
+
+.main-skills {
+    text-align: left;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 100%;
+    height: 23%;
+    color:  rgb(117,117,117);
+    background-color:#FFFFFF;
+    border: 1px solid transparent;
+    border-radius: 10px;  
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;     
+}
+
+.main-skills:hover{
+    box-shadow: 4px 8px 16px 2px rgba(0,0,0,0.2);
+}
+
+.main-skills p{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.skills {
+    display: flex;
+}
+
+.skills-ul {
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: left;
+    justify-content: center;
+    width: 100%;    
+    color:  rgb(117,117,117);
+}
+
+.skills-ul li{
+    list-style-type:square;   
+    height: 28px;
+}
+
+.main-lang {
+    text-align: left;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 100%;
+    height: 23%;
+    color:  rgb(117,117,117);
+    background-color:#FFFFFF;
+    border: 1px solid transparent;
+    border-radius: 10px;    
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;  
+}
+
+.main-lang:hover{
+    box-shadow: 4px 8px 16px 2px rgba(0,0,0,0.2);
+}
+
+.main-lang p{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.lang-table {
+    font-size: 1em;
+    font-weight: 700;
+    text-align: left;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px; 
+}
+
+.lang-table td{
+    width: 50%;
+    background-color:#FFFFFF;
+    border: 1px solid transparent; 
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.lang-table td:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.lang-table i:hover{
+    box-shadow: 0 8px 16px 0 rgba(18, 225, 32, 0.803);
+}
+
+.main-interest {
+    text-align: left;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 100%;
+    height: 23%;
+    color:  rgb(117,117,117);
+    background-color:#FFFFFF;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 10px;    
+}
+
+.main-interest:hover{
+    box-shadow: 4px 8px 16px 8px rgba(0,0,0,0.2);
+}
+
+.main-interest p{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.interest {
+    display: flex;
+}
+
+.interest-ul {
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: left;
+    justify-content: center;
+    width: 100%;    
+    color:  rgb(117,117,117);
+}
+
+.interest li{
+    list-style-type:square;   
+    height: 40px;
+}
+
+.self-about{    
+    width: 100%;
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: rgb(117,117,117);
+    border: 1px solid transparent;
+    border-radius: 10px;    
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    margin-top: 10px;
+    height: 33%;
+}
+
+.self-about:hover {
+    box-shadow: 4px 8px 16px 8px rgba(0,0,0,0.2);
+}
+
+.self-about h4{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.self-about h5{
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.self-about p {
+    width:100%;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.abt-me-p {
+    margin-top: 5px;
+}
+
+.self-about1{    
+    width: 100%;
+    height: 61%;
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: rgb(117,117,117);
+    border: 1px solid transparent;
+    border-radius: 10px;    
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;
+}
+
+.self-about1:hover{
+    box-shadow: 4px 8px 16px 8px rgba(0,0,0,0.2);
+}
+
+.self-about1 p {
+    line-height: 20px;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.line {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 2px;
+    background: black;
+}
+
+.line1 {
+    width: 100%;    
+    margin-top: 5px; 
+    margin-bottom: 5px;   
+    height: 2px;
+    background: black;
+}
+
+.exp {
+    font-size: 0.9em;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.exp1 {
+    margin-left: 38px;
+    margin-top: 7px;
+    width: 95%;
+    font-size: 0.9em;
+    font-weight: 400;
+    text-align: justify;
+}
+
+/* Screen Size/Width 500px and down */
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    .row{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .column {
+        margin-top: 10px;
+        width:90vw;
+        /* border: 1px solid black; */
+    }
+    
+    .column1{
+        margin-top: 10px;
+        width:90vw;
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    .pd p{
+        font-size: 0.9em;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .personal_details, td {
+        font-size: 0.9em;
+        width: 75%;
+    }
+
+    .main-skills p{
+        font-size: 0.9em;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    
+    .skills-ul {        
+        font-size: 0.8em;
+    }
+
+    .skills-ul li{
+        list-style-type:square;   
+        height: 23px;
+    }
+
+    .main-lang {
+        font-size: 0.9em;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .lang-table {        
+        height: 20px;        
+    }
+
+    .lang-table td {        
+        font-size: 0.8em;
+    }
+    
+    .main-interest {
+        font-size: 0.9em;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .main-interest p{
+        font-size: 0.9em;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    
+    .self-about{           
+        height: 60%;
+    }
+
+    .self-about p {
+        width:100%;
+        font-size: 0.8em;
+        font-weight: 700;
+        text-align: justify;
+    }
+
+    .exp1 {        
+        width: 85%;
+    }
+
+}
+
+/* Screen Size/Width between 500px to 993px */
+@media only screen and (min-width: 501px) and (max-width: 993px) {
+    .column {
+        margin-top: 1px;
+        width: 30%;
+        box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .column1 {
+        margin-top: 1px;
+        width: 69%;
+        box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .pd {
+        margin-top: 0px;
+        height: 24%;
+    }
+
+    .pd p{
+        font-size: 0.9em;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .personal_details, td {
+        font-size: 0.83em;
+        font-weight: 900;
+        width: 80%;
+    }
+
+    .main-skills {
+        height: 24%;
+    }
+
+    .main-skills p{
+        font-size: 0.9em;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    
+    .skills-ul {        
+        font-size: 0.8em;
+    }
+
+    .skills-ul li{
+        list-style-type:square;   
+        height: 23px;
+    }
+
+    .main-lang {
+        font-size: 0.9em;
+        font-weight: 700;
+        margin-bottom: 5px;
+        height: 24%;
+    }
+
+    .lang-table {        
+        height: 20px;        
+    }
+
+    .lang-table td {        
+        font-size: 0.8em;
+    }
+    
+    .main-interest {
+        font-size: 0.9em;
+        font-weight: 700;
+        margin-bottom: 5px;
+        height: 24%;
+    }
+
+    .main-interest p{
+        font-size: 0.9em;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .interest-ul {        
+        font-size: 0.8em;
+    }
+    
+    .interest li{
+        list-style-type:square;   
+        height: 45px;
+    }
+    
+    .self-about{   
+        margin-top: 0px;        
+        height: 40%;
+    }
+
+    .self-about h4{
+        margin-top: 0px; 
+        font-size: 0.9em;
+        font-weight: 700;
+    }
+
+    .self-about h5{
+        font-size: 0.7em;
+        font-weight: 700;
+    }
+
+    .self-about p {
+        width:100%;
+        font-size: 0.71em;
+        font-weight: 600;
+        text-align: justify;
+    }
+
+    .exp1 {        
+        width: 90%;
+    }
+
+    .line {
+        width: 100%;    
+        margin-top: 1px; 
+        margin-bottom: 1px;   
+        height: 1px;
+        background: black;
+    }
+
+    .self-about1{   
+        margin-top: 0px;        
+        height: 58%;
+    }
+
+    .self-about1 h3{   
+        margin-top: 0px;        
+    }
+}
+

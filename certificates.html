@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/certificates.css" />
+    <title>Certificates</title>
+</head>
+<body>
+    <div class="middle">
+        <h1>Certificates</h1>
+    </div>
+    <div class="row">
+        <div class="column">
+          <img src="./assets/certificates/HTML & CSS.png" id="myImg" onclick="openModal('myImg',this.src,this.alt)" alt="HTML and CSS" style="width:100%">
+        </div>
+        <!-- <div class="column">
+            <img src="./assets/certificates/HTML & CSS.png" id="myImg1" onclick="openModal('myImg1',this.src,this.alt)" alt="GIT" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="./assets/certificates/HTML & CSS.png" id="myImg2" onclick="openModal('myImg2',this.src,this.alt)" alt="JavaScript" style="width:100%">
+        </div> -->
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>  
+    </div>  
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        function openModal(img_id, img_src, img_alt) {
+            // Get the image and insert it inside the modal - use its "alt" text as a caption        
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            var img = document.getElementById(img_id);
+            modal.style.display = "block";
+            modalImg.src = img_src;
+            captionText.innerHTML = img_alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
